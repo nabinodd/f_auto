@@ -2,14 +2,14 @@
 #define CONNECTION_TIMEOUT 10
 
 const char *ssid = "pi@net";
-const char *password = "ONETWOTHREEFOUR";
+const char *password = "9806064667";
 
 void setup()
 {
    Serial.begin(115200);
    WiFi.mode(WIFI_STA);
-   WiFi.begin(ssid);
-   
+   WiFi.begin(ssid, password);
+
    Serial.println("\nConnecting");
    int timeout_counter = 0;
 
